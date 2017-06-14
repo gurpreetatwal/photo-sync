@@ -12,6 +12,8 @@ const router = new Router();
 
 router.use('/microsoft', microsoft.router.routes());
 
+app.context.store = new Map();
+
 app.use(body())
 app.use(serve(__dirname + '/static'));
 app.use(router.routes())
