@@ -1,6 +1,7 @@
 'use strict';
 
 const Koa = require('koa');
+const serve = require('koa-static');
 const Router = require('koa-router');
 const body = require('koa-bodyparser');
 
@@ -11,7 +12,8 @@ const router = new Router();
 
 router.use('/microsoft', microsoft.router.routes());
 
-app.use(body());
+app.use(body())
+app.use(serve(__dirname + '/static'));
 app.use(router.routes())
 app.use(router.allowedMethods());
 
