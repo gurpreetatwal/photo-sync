@@ -1,0 +1,17 @@
+# Packages
+node_modules
+
+# Testing/Coverage/Lint
+coverage
+.eslintcache
+.nyc_output
+
+# Vim
+*~
+tags
+.netrwhist
+Session.vim
+[._]s[a-v][a-z]
+[._]sw[a-p]
+[._]*.sw[a-p]
+[._]*.s[a-v][a-z]
