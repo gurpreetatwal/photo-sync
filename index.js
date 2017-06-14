@@ -5,12 +5,14 @@ const serve = require('koa-static');
 const Router = require('koa-router');
 const body = require('koa-bodyparser');
 
+const facebook = require('./lib/facebook');
 const microsoft = require('./lib/microsoft');
 
 const app = new Koa();
 const router = new Router();
 
 router.use('/microsoft', microsoft.router.routes());
+router.use('/facebook', facebook.router.routes());
 
 app.context.store = new Map();
 
