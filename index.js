@@ -17,9 +17,9 @@ router.use('/facebook', facebook.router.routes());
 
 app.context.store = new Map();
 
-app.use(body())
+app.use(body());
 app.use(serve(__dirname + '/static'));
-app.use(router.routes())
+app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen(config.get('port'));
