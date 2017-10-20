@@ -5,6 +5,7 @@ const serve = require('koa-static');
 const Router = require('koa-router');
 const body = require('koa-bodyparser');
 
+const config = require('./config');
 const facebook = require('./lib/facebook');
 const microsoft = require('./lib/microsoft');
 
@@ -21,4 +22,4 @@ app.use(serve(__dirname + '/static'));
 app.use(router.routes())
 app.use(router.allowedMethods());
 
-app.listen(2000);
+app.listen(config.get('port'));

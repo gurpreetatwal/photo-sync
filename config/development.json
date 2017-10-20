@@ -1,0 +1,16 @@
+{
+  "port": 2000,
+  "host": "http://localhost:2000",
+  "microsoft": {
+    "id": "d64f31f6-2f24-4dcc-9887-6222d6f394bf",
+    "scopes": [
+      "openid",
+      "offline_access",
+      "user.read",
+      "contacts.readwrite"
+    ]
+  },
+  "facebook": {
+    "id": "1435372633187836"
+  }
+}

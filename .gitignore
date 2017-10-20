@@ -1,3 +1,6 @@
+# Secrets
+config/secret
+
 # Packages
 node_modules
 

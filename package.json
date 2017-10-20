@@ -17,6 +17,7 @@
   "homepage": "https://github.com/gurpreetatwal/photo-sync#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "convict": "^4.0.1",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.2.0",
