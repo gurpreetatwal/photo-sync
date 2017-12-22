@@ -58,6 +58,23 @@ const config = convict({
       env: 'FB_SECRET',
     },
   },
+  redis: {
+    host: {
+      doc: 'Hostname for redis',
+      format: String,
+      default: null,
+    },
+    port: {
+      doc: 'Port to connect on',
+      format: 'port',
+      default: null,
+    },
+    password: {
+      doc: 'Password to use when connecting',
+      format: String,
+      default: null
+    },
+  },
 });
 
 const configFile = `${config.get('env')}.json`;

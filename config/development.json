@@ -12,5 +12,9 @@
   },
   "facebook": {
     "id": "1435372633187836"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
   }
 }
