@@ -26,6 +26,20 @@
     "koa-static": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "xo": "^0.21.1"
+  },
+  "xo": {
+    "space": 2,
+    "prettier": true,
+    "rules": {
+      "capitalized-comments": [
+        "off"
+      ]
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": false
   }
 }
