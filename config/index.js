@@ -72,7 +72,7 @@ const config = convict({
     password: {
       doc: 'Password to use when connecting',
       format: String,
-      default: null
+      default: null,
     },
   },
 });

@@ -1,5 +1,6 @@
 'use strict';
 
+const {join} = require('path');
 const Koa = require('koa');
 const serve = require('koa-static');
 const Router = require('koa-router');
@@ -18,7 +19,7 @@ router.use('/facebook', facebook.router.routes());
 app.context.store = new Map();
 
 app.use(body());
-app.use(serve(__dirname + '/static'));
+app.use(serve(join(__dirname, 'static')));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
