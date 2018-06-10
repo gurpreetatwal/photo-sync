@@ -10,6 +10,8 @@ const config = require('./config');
 const facebook = require('./lib/facebook');
 const microsoft = require('./lib/microsoft');
 
+const PORT = config.get('port');
+
 const app = new Koa();
 const router = new Router();
 
@@ -23,4 +25,4 @@ app.use(serve(join(__dirname, 'static')));
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(config.get('port'));
+app.listen(PORT, () => console.log(`listening on http://localhost:${PORT}`));
