@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "npm run lint -s",
     "lint": "eslint ."
   },
@@ -26,6 +27,7 @@
     "koa-static": "^4.0.1"
   },
   "devDependencies": {
+    "nodemon": "^1.17.5",
     "xo": "^0.21.1"
   },
   "xo": {
