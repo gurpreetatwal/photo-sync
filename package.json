@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/gurpreetatwal/photo-sync#readme",
   "dependencies": {
-    "axios": "^0.16.2",
-    "convict": "^4.0.1",
-    "ioredis": "^3.2.1",
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.2.1",
-    "koa-static": "^4.0.1"
+    "axios": "^0.18.0",
+    "convict": "^4.3.0",
+    "ioredis": "^3.2.2",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
