@@ -17,5 +17,10 @@
     "host": "localhost",
     "port": 6379,
     "password": ""
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "photo_sync"
   }
 }
