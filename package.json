@@ -19,17 +19,17 @@
   "homepage": "https://github.com/gurpreetatwal/photo-sync#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "convict": "^4.3.0",
+    "convict": "^4.3.2",
     "ioredis": "^3.2.2",
-    "koa": "^2.5.1",
+    "koa": "^2.5.2",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "koa-static": "^4.0.3"
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
     "greenkeeper-lockfile": "^1.15.1",
-    "nodemon": "^1.17.5",
-    "xo": "^0.21.1"
+    "nodemon": "^1.18.3",
+    "xo": "^0.22.0"
   },
   "xo": {
     "space": 2,
