@@ -25,6 +25,13 @@ const config = convict({
     env: 'HOST',
     arg: 'host',
   },
+  secret: {
+    doc: 'Secret string used to sign cookies',
+    format: String,
+    default: null,
+    env: 'SECRET',
+    arg: 'secret',
+  },
   microsoft: {
     id: {
       doc: 'Microsoft application client id',
