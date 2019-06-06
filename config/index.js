@@ -122,9 +122,9 @@ config.loadFile(path.resolve(__dirname, configFile));
 
 try {
   config.loadFile(path.resolve(__dirname, 'secret', configFile));
-} catch (e) {
+} catch (error) {
   // ignore no such file errors, secrets might be passed via env args
-  if (e.code !== 'ENOENT') throw e;
+  if (error.code !== 'ENOENT') throw error;
 }
 
 config.validate({allowed: 'strict'});
