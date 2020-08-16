@@ -48,7 +48,7 @@ const config = convict({
     scopes: {
       doc: 'List of scopes to request from Microsoft',
       format: Array,
-      default: null,
+      default: ['user.read', 'offline_access'],
     },
   },
   facebook: {
